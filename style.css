@@ -761,6 +761,7 @@ a:hover::after {
     box-shadow: var(--shadow-sm);
     background: #f0f0f0;
     transition: all var(--transition-medium);
+    cursor: zoom-in;
 }
 
 .pub-card:hover .pub-visual {
