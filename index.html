@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haohao Pan (潘好好) - Homepage</title>
+    <meta name="description" content="Haohao Pan (潘好好), undergraduate student at Northeastern University, researching visual in-context learning, multimodal large models, and visual reasoning.">
+    <meta name="author" content="Haohao Pan">
+    <meta name="keywords" content="Haohao Pan, 潘好好, Visual In-Context Learning, Multimodal Large Models, Visual Reasoning, Northeastern University">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Haohao Pan (潘好好) - Homepage">
+    <meta property="og:description" content="Undergraduate student at Northeastern University researching visual in-context learning, multimodal large models, and visual reasoning.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Haohao Pan (潘好好) - Homepage">
+    <meta name="twitter:description" content="Undergraduate student at Northeastern University researching visual in-context learning, multimodal large models, and visual reasoning.">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="style.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Haohao Pan",
+            "alternateName": "潘好好",
+            "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "Northeastern University"
+            },
+            "knowsAbout": [
+                "Visual In-Context Learning",
+                "Multimodal Large Models",
+                "Visual Reasoning"
+            ],
+            "sameAs": [
+                "https://scholar.google.com/citations?user=-yHMLr8AAAAJ&hl=en"
+            ]
+        }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="主导航">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">Haohao Pan</a>
+            <a href="#home" class="nav-logo">Haohao Pan</a>
             <ul class="nav-menu">
                 <li><a href="#about"><i class="fas fa-user"></i> 简介</a></li>
                 <li><a href="#education"><i class="fas fa-graduation-cap"></i> 教育</a></li>
@@ -34,10 +66,10 @@
 
     <div class="container">
         <!-- Header -->
-        <header class="header" id="about">
+        <header class="header" id="home">
             <div class="header-content">
                 <div class="avatar">
-                    <img src="photo.jpg" alt="Haohao Pan">
+                    <img src="photo.jpg" alt="Haohao Pan" width="1752" height="2452" decoding="async" fetchpriority="high">
                 </div>
                 <div class="profile-info">
                     <h1 class="name">潘好好 <span class="name-en">Haohao Pan</span></h1>
@@ -51,7 +83,7 @@
                         <span class="contact-item">
                             <i class="fas fa-phone"></i> (+86) 158-6806-8442
                         </span>
-                        <a href="https://scholar.google.com/citations?user=-yHMLr8AAAAJ&hl=en" target="_blank" class="contact-item">
+                        <a href="https://scholar.google.com/citations?user=-yHMLr8AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="contact-item">
                             <i class="fas fa-graduation-cap"></i> Google Scholar
                         </a>
                     </div>
@@ -64,9 +96,9 @@
             <h2 class="section-title"><i class="fas fa-id-card"></i> 个人简介 / Biography</h2>
             <div class="section-body">
                 <p>
-                    我是<a href="https://www.neu.edu.cn/" target="_blank">东北大学</a>计算机科学与工程学院本科生（三年级），
+                    我是<a href="https://www.neu.edu.cn/" target="_blank" rel="noopener noreferrer">东北大学</a>计算机科学与工程学院本科生（三年级），
                     主要研究方向为<strong>视觉上下文学习（Visual In-Context Learning）</strong>、<strong>多模态大模型</strong>与<strong>视觉推理</strong>。
-                    我目前在<a href="https://www.tsinghua.edu.cn/" target="_blank">清华大学</a>深圳国际研究生院进行科研实习，
+                    我目前在<a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer">清华大学</a>深圳国际研究生院进行科研实习，
                     从事视觉上下文学习与视觉抽象推理方面的前沿研究。
                 </p>
                 <p>
@@ -177,12 +209,12 @@
             <h2 class="section-title"><i class="fas fa-file-lines"></i> 论文发表 / Publications</h2>
             <div class="pub-list">
                 <div class="pub-card">
-                    <div class="pub-visual" onclick="openModal('paper.png')">
-                        <img src="paper.png" alt="LaPR Framework">
-                        <div class="pub-img-overlay">
+                    <button type="button" class="pub-visual" data-modal-src="paper.png" data-modal-alt="LaPR Framework" aria-label="放大 LaPR 框架图">
+                        <img src="paper.png" alt="LaPR Framework" width="2360" height="1246" loading="lazy" decoding="async">
+                        <span class="pub-img-overlay">
                             <span class="overlay-link"><i class="fas fa-expand"></i> 点击放大</span>
-                        </div>
-                    </div>
+                        </span>
+                    </button>
                     <div class="pub-detail">
                         <div class="pub-badges-row">
                             <span class="pub-id">C1</span>
@@ -199,10 +231,10 @@
                         </p>
                         <p class="pub-note"><i class="fas fa-star"></i> 共同第一作者 · 提出标签感知提示检索框架 LaPR，在前景分割、目标检测和图像着色任务上取得 SOTA 效果</p>
                         <div class="pub-buttons">
-                            <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Luo_Love_Me_Love_My_Label_Rethinking_the_Role_of_Labels_CVPR_2026_paper.pdf" target="_blank" class="btn-pdf">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Luo_Love_Me_Love_My_Label_Rethinking_the_Role_of_Labels_CVPR_2026_paper.pdf" target="_blank" rel="noopener noreferrer" class="btn-pdf">
                                 <i class="fas fa-file-pdf"></i> PDF
                             </a>
-                            <a href="https://arxiv.org/abs/2604.03657" target="_blank" class="btn-arxiv">
+                            <a href="https://arxiv.org/abs/2604.03657" target="_blank" rel="noopener noreferrer" class="btn-arxiv">
                                 <i class="fas fa-external-link-alt"></i> arXiv
                             </a>
                         </div>
@@ -210,12 +242,12 @@
                 </div>
             </div>
             <div class="wip-card">
-                <div class="wip-visual" onclick="openModal('wip.png')">
-                    <img src="wip.png" alt="MIRA Framework">
-                    <div class="pub-img-overlay">
+                <button type="button" class="wip-visual" data-modal-src="wip.png" data-modal-alt="MIRA Framework" aria-label="放大 MIRA 框架图">
+                    <img src="wip.png" alt="MIRA Framework" width="1160" height="1000" loading="lazy" decoding="async">
+                    <span class="pub-img-overlay">
                         <span class="overlay-link"><i class="fas fa-expand"></i> 点击放大</span>
-                    </div>
-                </div>
+                    </span>
+                </button>
                 <div class="wip-detail">
                     <div class="wip-badges-row">
                         <span class="wip-badge">Work in Progress</span>
@@ -431,9 +463,12 @@
         // Smooth scroll for nav links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const hash = this.getAttribute('href');
+                if (!hash || hash === '#') return;
+
+                const target = document.getElementById(hash.slice(1));
                 if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
@@ -443,40 +478,76 @@
         const sections = document.querySelectorAll('.section[id]');
         const navLinks = document.querySelectorAll('.nav-menu a');
 
-        window.addEventListener('scroll', () => {
+        function updateActiveNav() {
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                if (scrollY >= sectionTop - 200) {
+                if (window.scrollY >= sectionTop - 200) {
                     current = section.getAttribute('id');
                 }
             });
             navLinks.forEach(link => {
                 link.classList.remove('active');
+                link.removeAttribute('aria-current');
                 if (link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
+                    link.setAttribute('aria-current', 'location');
                 }
             });
-        });
+        }
+
+        window.addEventListener('scroll', updateActiveNav, { passive: true });
+        updateActiveNav();
     </script>
 
     <!-- Image Modal -->
-    <div id="imgModal" class="modal" onclick="closeModal()">
-        <span class="modal-close" onclick="event.stopPropagation(); closeModal();">&times;</span>
-        <img class="modal-content" id="modalImg" src="paper.png" alt="LaPR Framework" onclick="event.stopPropagation();">
+    <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-label="图片预览" aria-hidden="true">
+        <button type="button" class="modal-close" aria-label="关闭图片预览">&times;</button>
+        <img class="modal-content" id="modalImg" src="paper.png" alt="LaPR Framework" width="2360" height="1246" loading="lazy" decoding="async">
     </div>
 
     <script>
-        function openModal(src) {
-            const modalImg = document.getElementById('modalImg');
-            if (src) modalImg.src = src;
-            document.getElementById('imgModal').style.display = 'flex';
+        const modal = document.getElementById('imgModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalClose = modal.querySelector('.modal-close');
+        let lastFocusedElement = null;
+
+        document.querySelectorAll('[data-modal-src]').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                openModal(trigger.dataset.modalSrc, trigger.dataset.modalAlt);
+            });
+        });
+
+        function openModal(src, alt) {
+            if (!src) return;
+
+            lastFocusedElement = document.activeElement;
+            modalImg.src = src;
+            modalImg.alt = alt || '图片预览';
+            modal.style.display = 'flex';
+            modal.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
+            modalClose.focus();
         }
+
         function closeModal() {
-            document.getElementById('imgModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
+            if (modal.getAttribute('aria-hidden') === 'true') return;
+
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+
+            if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+                lastFocusedElement.focus();
+            }
         }
+
+        modal.addEventListener('click', event => {
+            if (event.target === modal) closeModal();
+        });
+
+        modalClose.addEventListener('click', closeModal);
+
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeModal();
