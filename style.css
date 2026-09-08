@@ -1380,6 +1380,28 @@ a:hover::after {
     margin-right: 3px;
 }
 
+.visitor-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.visitor-stats i {
+    color: inherit;
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.visitor-stats strong {
+    margin: 0 3px;
+    color: var(--color-muted);
+    font-family: 'SF Mono', Monaco, monospace;
+    font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-inner {
