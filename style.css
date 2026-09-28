@@ -837,7 +837,7 @@ a:hover::after {
 /* Open-Source Projects */
 .project-entry {
     position: relative;
-    padding: 0 12px;
+    padding: 0 16px;
 }
 
 .project-entry::before {
@@ -1426,7 +1426,7 @@ a:hover::after {
 
     .project-entry::before { inset: -12px 0; }
 
-    .project-entry { padding: 0 10px; }
+    .project-entry { padding: 0 12px; }
 
     .exp-item { padding: 0 12px; }
 
