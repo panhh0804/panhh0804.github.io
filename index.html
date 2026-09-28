@@ -6,7 +6,7 @@
     <title>Haohao Pan (潘好好) - Homepage</title>
     <meta name="description" content="Haohao Pan (潘好好), an undergraduate student at Northeastern University and an incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in spatial intelligence, embodied intelligence, and AI agents.">
     <meta name="author" content="Haohao Pan">
-    <meta name="keywords" content="Haohao Pan, 潘好好, Spatial Intelligence, Embodied Intelligence, AI Agents, Visual In-Context Learning, Multimodal Large Models, Visual Reasoning, Northeastern University, Zhejiang University, School of Artificial Intelligence">
+    <meta name="keywords" content="Haohao Pan, 潘好好, LongVideoClaw, Long-Video Understanding, Multi-Agent Systems, Spatial Intelligence, Embodied Intelligence, AI Agents, Visual In-Context Learning, Multimodal Large Models, Visual Reasoning, Northeastern University, Zhejiang University, School of Artificial Intelligence">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Haohao Pan (潘好好) - Homepage">
     <meta property="og:description" content="Undergraduate student at Northeastern University and incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in spatial intelligence, embodied intelligence, and AI agents.">
@@ -39,6 +39,8 @@
                 "Spatial Intelligence",
                 "Embodied Intelligence",
                 "AI Agents",
+                "Long-Video Understanding",
+                "Multi-Agent Systems",
                 "Visual In-Context Learning",
                 "Multimodal Large Models",
                 "Visual Reasoning"
@@ -59,6 +61,7 @@
                 <li><a href="#education"><i class="fas fa-graduation-cap"></i> 教育</a></li>
                 <li><a href="#research"><i class="fas fa-lightbulb"></i> 研究</a></li>
                 <li><a href="#publications"><i class="fas fa-file-lines"></i> 论文</a></li>
+                <li><a href="#projects"><i class="fas fa-code-branch"></i> 项目</a></li>
                 <li><a href="#experience"><i class="fas fa-flask"></i> 科研</a></li>
                 <li><a href="#competitions"><i class="fas fa-trophy"></i> 竞赛</a></li>
                 <li><a href="#awards"><i class="fas fa-award"></i> 荣誉</a></li>
@@ -257,22 +260,32 @@
                     </div>
                 </div>
             </div>
-            <div class="wip-card">
-                <button type="button" class="wip-visual" data-modal-src="wip.png" data-modal-alt="MIRA Framework" aria-label="放大 MIRA 框架图">
-                    <img src="wip.png" alt="MIRA Framework" width="1160" height="1000" loading="lazy" decoding="async">
-                    <span class="pub-img-overlay">
-                        <span class="overlay-link"><i class="fas fa-expand"></i> 点击放大</span>
-                    </span>
-                </button>
-                <div class="wip-detail">
-                    <div class="wip-badges-row">
-                        <span class="wip-badge">Work in Progress</span>
+        </section>
+
+        <!-- Open-Source Projects -->
+        <section class="section" id="projects">
+            <h2 class="section-title"><i class="fas fa-code-branch"></i> 开源项目 / Open-Source Projects</h2>
+            <article class="project-entry">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">LongVideoClaw</h3>
+                        <p class="project-subtitle">交互式长视频理解多智能体系统</p>
                     </div>
-                    <h4 class="wip-title">MIRA: Mimetic In-Context Reasoning Adapter for Visual Abstraction and Reasoning</h4>
-                    <p class="wip-authors">Haohao Pan, et al.</p>
-                    <p class="wip-desc">提出基于视觉上下文的类比推理框架 MIRA，通过将任务示例作为视觉上下文引入生成模型，使模型能够动态提取示例中的变换模式，提升复杂 ARC 任务上的推理性能。当前处于实验验证与论文撰写阶段。</p>
+                    <a href="https://github.com/panhh0804/LongVideoClaw" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="在 GitHub 上查看 LongVideoClaw">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
-            </div>
+                <p class="project-description">
+                    构建“规划—定位—推理—审核—修正”的多智能体闭环，通过 Super / Macro / Micro Event 多级记忆图谱定位长视频中的关键片段，
+                    并结合帧级视觉推理与 Visual Critic 证据审核，实现可追溯、可自我修正的长视频问答。
+                </p>
+                <div class="project-highlights" aria-label="LongVideoClaw 核心特性">
+                    <span><i class="fas fa-layer-group"></i> 层次化记忆检索</span>
+                    <span><i class="fas fa-location-crosshairs"></i> 时序语义定位</span>
+                    <span><i class="fas fa-eye"></i> 帧级视觉推理</span>
+                    <span><i class="fas fa-rotate"></i> Critic 自校正闭环</span>
+                </div>
+            </article>
         </section>
 
         <!-- Research Experience -->
