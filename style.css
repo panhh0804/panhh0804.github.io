@@ -1599,6 +1599,21 @@ a:hover::after {
 
 .exp-mentor i { font-size: 11px; }
 
+.exp-org,
+.exp-advisor,
+.exp-mentor {
+    color: var(--color-muted);
+    background: #f5f6f7;
+    border: 1px solid var(--color-border-light);
+}
+
+.exp-org i,
+.exp-advisor i,
+.exp-mentor i {
+    color: var(--color-accent-light);
+    opacity: 0.65;
+}
+
 .exp-body {
     font-size: 14px;
     color: var(--color-secondary);
