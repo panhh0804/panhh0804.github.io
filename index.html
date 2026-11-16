@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haohao Pan (潘好好) - Homepage</title>
-    <meta name="description" content="Haohao Pan (潘好好), an undergraduate student at Northeastern University and an incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in spatial intelligence, embodied intelligence, and AI agents.">
+    <title>Haohao Pan - Academic Homepage</title>
+    <meta name="description" content="Haohao Pan, an undergraduate student at Northeastern University and an incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in embodied AI and world models.">
     <meta name="author" content="Haohao Pan">
     <meta name="keywords" content="Haohao Pan, 潘好好, LongVideoClaw, Long-Video Understanding, Multi-Agent Systems, Spatial Intelligence, Embodied Intelligence, AI Agents, Visual In-Context Learning, Multimodal Large Models, Visual Reasoning, Northeastern University, Zhejiang University, School of Artificial Intelligence">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Haohao Pan (潘好好) - Homepage">
-    <meta property="og:description" content="Undergraduate student at Northeastern University and incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in spatial intelligence, embodied intelligence, and AI agents.">
+    <meta property="og:title" content="Haohao Pan - Academic Homepage">
+    <meta property="og:description" content="Undergraduate student at Northeastern University and incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in embodied AI and world models.">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Haohao Pan (潘好好) - Homepage">
-    <meta name="twitter:description" content="Undergraduate student at Northeastern University and incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in spatial intelligence, embodied intelligence, and AI agents.">
+    <meta name="twitter:title" content="Haohao Pan - Academic Homepage">
+    <meta name="twitter:description" content="Undergraduate student at Northeastern University and incoming direct-entry PhD student at the School of Artificial Intelligence, Zhejiang University, interested in embodied AI and world models.">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=19">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
@@ -53,17 +53,21 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" aria-label="主导航">
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="nav-inner">
             <a href="#home" class="nav-logo">Haohao Pan</a>
-            <ul class="nav-menu">
-                <li><a href="#about">Biography</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#awards">Awards</a></li>
-            </ul>
+            <div class="nav-actions">
+                <ul class="nav-menu">
+                    <li><a href="#news" data-i18n="nav.news">News</a></li>
+                    <li><a href="#about" data-i18n="nav.biography">Biography</a></li>
+                    <li><a href="#research" data-i18n="nav.research">Research</a></li>
+                    <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
+                </ul>
+                <button type="button" class="language-toggle" id="language-toggle" aria-label="Switch to the Chinese version">中文</button>
+            </div>
         </div>
     </nav>
 
@@ -75,7 +79,7 @@
                     <img src="photo.jpg" alt="Haohao Pan" width="1752" height="2452" decoding="async" fetchpriority="high">
                 </div>
                 <div class="profile-info">
-                    <h1 class="name">潘好好 <span class="name-en">Haohao Pan</span></h1>
+                    <h1 class="name" data-i18n-html="profile.name">Haohao Pan</h1>
                     <div class="contact">
                         <a href="mailto:panhh@mails.neu.edu.cn" class="contact-item">
                             <i class="fas fa-envelope"></i> panhh@mails.neu.edu.cn
@@ -91,54 +95,57 @@
             </div>
         </header>
 
+        <!-- News -->
+        <section class="section" id="news">
+            <h2 class="section-title" data-i18n="section.news">News</h2>
+            <div class="news-item">
+                <time datetime="2026-09" data-i18n="news.date">[Sept. 2026]</time>
+                <p data-i18n-html="news.zju">I have been admitted to the School of Artificial Intelligence at <a class="institution-link" href="https://www.zju.edu.cn/" target="_blank" rel="noopener noreferrer">Zhejiang University</a> as a direct-entry Ph.D. student and plan to enroll in Fall 2027.</p>
+            </div>
+        </section>
+
         <!-- Biography -->
         <section class="section" id="about">
-            <h2 class="section-title">Biography</h2>
+            <h2 class="section-title" data-i18n="section.biography">Biography</h2>
             <div class="section-body">
-                <p>
-                    我是<a href="https://www.neu.edu.cn/" target="_blank" rel="noopener noreferrer">东北大学</a>计算机科学与工程学院本科生，
-                    现已推免直博至<a href="https://www.zju.edu.cn/" target="_blank" rel="noopener noreferrer">浙江大学</a>人工智能学院。
-                    本科期间，我曾在<a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer">清华大学</a>深圳国际研究生院进行科研实习，
-                    围绕<strong>视觉上下文学习（Visual In-Context Learning）</strong>、<strong>多模态大模型</strong>与<strong>视觉抽象推理</strong>开展研究，
-                    重点关注如何让视觉模型通过少量示例快速适应新任务，以及如何利用上下文学习增强模型的抽象推理能力。
-                    研究生阶段，我希望进一步探索<strong>空间智能</strong>、<strong>具身智能</strong>与 <strong>AI Agent</strong>。
+                <p data-i18n-html="bio.p1">
+                    I am currently an undergraduate student majoring in Computer Science and Technology at <a class="institution-link" href="https://www.neu.edu.cn/" target="_blank" rel="noopener noreferrer">Northeastern University</a>. During my undergraduate studies, I conducted a research internship at <a class="institution-link" href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer">Tsinghua University</a>. My work has focused on <strong>Visual In-Context Learning</strong>, <strong>Multimodal Large Language Models</strong>, and <strong>Visual Abstract Reasoning</strong>, with an emphasis on leveraging in-context examples to improve task adaptation and strengthening models' understanding and reasoning over visual structures and abstract rules.
                 </p>
-                <p>
-                    我于 2023 年 9 月进入东北大学数学类专业学习，大一学年排名<strong>专业前 5%</strong>，
-                    后于 2024 年 9 月转入计算机科学与技术专业，大学三年综合排名<strong>9/215（专业前 4.2%）</strong>。
+                <p data-i18n-html="bio.p2">
+                    During my doctoral studies, I plan to further explore <strong>Embodied AI and World Models</strong>, focusing on how agents learn physical properties and dynamics through environmental interaction and transfer acquired knowledge across objects and tasks to improve generalization and autonomous decision-making in open-world environments.
                 </p>
             </div>
 
             <!-- Education and Internship Timeline -->
-            <ol class="academic-timeline" aria-label="教育经历时间轴">
+            <ol class="academic-timeline" aria-label="Education timeline">
                 <li class="academic-step academic-step-math">
                     <time class="academic-period" datetime="2023-09">2023.09 — 2024.06</time>
                     <article class="academic-card">
-                        <div class="academic-institution"><i class="fas fa-university" aria-hidden="true"></i>东北大学</div>
-                        <h3>数学类（本科｜大一转出）</h3>
-                        <p class="academic-rank">大一学年 <strong>专业前 5%</strong></p>
+                        <div class="academic-institution"><span class="school-name" data-i18n="institution.neu">Northeastern University</span></div>
+                        <h3 data-i18n="education.math.degree">Mathematics (B.Sc., Year 1)</h3>
+                        <p class="academic-rank" data-i18n-html="education.math.rank">First-year ranking: <strong>top 5%</strong></p>
                     </article>
                     <svg class="academic-connector" viewBox="0 0 36 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 0 C2 7 10 12 34 16"></path></svg>
                 </li>
                 <li class="academic-step academic-step-cs">
-                    <time class="academic-period" datetime="2024-09">2024.09 — 2027.06 (预计)</time>
+                    <time class="academic-period" datetime="2024-09" data-i18n="education.cs.date">2024.09 — 2027.06 (Expected)</time>
                     <article class="academic-card">
-                        <div class="academic-institution"><i class="fas fa-university" aria-hidden="true"></i>东北大学</div>
-                        <h3>计算机科学与技术（本科｜大二转入）</h3>
-                        <p class="academic-rank"><strong>大学三年综合排名 9/215（专业前 4.2%）</strong></p>
+                        <div class="academic-institution"><span class="school-name" data-i18n="institution.neu">Northeastern University</span></div>
+                        <h3 data-i18n="education.cs.degree">Computer Science and Technology (B.Sc.)</h3>
+                        <p class="academic-rank" data-i18n-html="education.cs.rank"><strong>Overall ranking: 9/215 (top 4.2%)</strong></p>
                     </article>
                     <svg class="academic-connector" viewBox="0 0 36 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 0 C2 7 10 12 34 16"></path></svg>
                 </li>
                 <li class="academic-step academic-step-zju">
-                    <time class="academic-period" datetime="2027-09">2027.09 — (拟)</time>
+                    <time class="academic-period" datetime="2027-09" data-i18n="education.zju.date">2027.09 —</time>
                     <article class="academic-card">
-                        <div class="academic-institution"><i class="fas fa-graduation-cap" aria-hidden="true"></i>浙江大学</div>
-                        <h3>人工智能（推免）</h3>
+                        <div class="academic-institution"><span class="school-name" data-i18n="institution.zju">Zhejiang University</span></div>
+                        <h3 data-i18n-html="education.zju.degree">Artificial Intelligence (Direct-entry Ph.D.) <span class="incoming-label">Incoming</span></h3>
                     </article>
                     <svg class="academic-connector" viewBox="0 0 36 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 0 C2 7 10 12 34 16"></path></svg>
                 </li>
             </ol>
-            <div class="internship-timeline" aria-label="科研实习时间轴">
+            <div class="internship-timeline" aria-label="Research internship timeline">
                 <span class="internship-range internship-range-neunlp" aria-hidden="true"></span>
                 <span class="internship-range internship-range-tsinghua" aria-hidden="true"></span>
                 <svg class="internship-links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
@@ -148,43 +155,42 @@
                 <article class="internship-card internship-card-neunlp">
                     <time datetime="2025-07">2025.07 — 2025.09</time>
                     <div class="internship-card-heading">
-                        <h3>东北大学自然语言处理实验室</h3>
-                        <span><i class="fas fa-briefcase" aria-hidden="true"></i>科研实习</span>
+                        <h3>NEUNLPLab</h3>
+                        <span><i class="fas fa-briefcase" aria-hidden="true"></i><span data-i18n="internship.role">Research Intern</span></span>
                     </div>
-                    <p>全双工语音对话模型评估基准 (FLEXI) 研究</p>
+                    <p data-i18n="internship.flexi">Full-Duplex Speech Dialogue Evaluation Benchmark (FLEXI)</p>
                 </article>
                 <article class="internship-card internship-card-tsinghua">
                     <time datetime="2025-08">2025.08 — 2026.07</time>
                     <div class="internship-card-heading">
-                        <h3>清华大学深圳国际研究生院</h3>
-                        <span><i class="fas fa-briefcase" aria-hidden="true"></i>科研实习</span>
+                        <h3 class="school-name" data-i18n="institution.tsinghua">Tsinghua University</h3>
+                        <span><i class="fas fa-briefcase" aria-hidden="true"></i><span data-i18n="internship.role">Research Intern</span></span>
                     </div>
-                    <p>视觉上下文学习与视觉抽象推理（LaPR、MIRA）</p>
+                    <p data-i18n="internship.tsinghua.topic">Visual In-Context Learning and Visual Abstract Reasoning (LaPR, MIRA)</p>
                 </article>
             </div>
         </section>
 
         <!-- Research Interests -->
         <section class="section" id="research">
-            <h2 class="section-title">Research Interests</h2>
+            <h2 class="section-title" data-i18n="section.research">Research Interests</h2>
             <div class="section-body">
-                <p class="research-statement">
-                    我的研究兴趣集中于<strong>空间智能（Spatial Intelligence）</strong>、<strong>具身智能（Embodied Intelligence）</strong>与<strong>智能体（AI Agent）</strong>。
-                    我关注智能系统对三维空间、场景结构与物理关系的理解与推理，研究感知、规划与行动闭环，以及智能体在真实或仿真环境中的学习，并进一步探索多模态智能体的任务规划、工具使用、环境交互与长程自主行动能力。
+                <p class="research-statement" data-i18n-html="research.statement">
+                    My research interests center on <strong>Spatial Intelligence</strong>, <strong>Embodied Intelligence</strong>, and <strong>AI Agents</strong>. I study how intelligent systems understand and reason about 3D space, scene structure, and physical relations; how agents learn perception-planning-action loops in real or simulated environments; and how multimodal agents plan tasks, use tools, interact with environments, and act autonomously over long horizons.
                 </p>
             </div>
         </section>
 
         <!-- Publications -->
         <section class="section" id="publications">
-            <h2 class="section-title">Publications</h2>
+            <h2 class="section-title" data-i18n="section.publications">Publications</h2>
             <ol class="publication-bibliography">
                 <li class="publication-entry">
-                    <button type="button" class="pub-visual" data-modal-src="paper.png" data-modal-alt="LaPR Framework" aria-label="放大 LaPR 框架图">
+                    <button type="button" class="pub-visual" data-modal-src="paper.png" data-modal-alt="LaPR Framework" aria-label="View the LaPR framework figure">
                         <img src="paper.png" alt="LaPR Framework" width="2360" height="1246" loading="lazy" decoding="async">
                         <span class="pub-venue-badge">CVPR 2026</span>
                         <span class="pub-img-overlay">
-                            <span class="overlay-link"><i class="fas fa-expand"></i> 查看大图</span>
+                            <span class="overlay-link"><i class="fas fa-expand"></i> <span data-i18n="publication.view">View figure</span></span>
                         </span>
                     </button>
                     <div class="pub-detail">
@@ -199,7 +205,7 @@
                             <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
                             <span class="pub-rank">CCF-A</span>
                         </p>
-                        <p class="pub-note">共同第一作者，提出标签感知提示检索框架 LaPR，在前景分割、目标检测和图像着色任务上取得 SOTA 效果</p>
+                        <p class="pub-note" data-i18n="publication.note">Co-first author. Proposed LaPR, a label-aware prompt retrieval framework that achieves state-of-the-art results on foreground segmentation, object detection, and image colorization.</p>
                         <div class="pub-buttons">
                             <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Luo_Love_Me_Love_My_Label_Rethinking_the_Role_of_Labels_CVPR_2026_paper.pdf" target="_blank" rel="noopener noreferrer" class="btn-pdf">
                                 PDF
@@ -215,96 +221,83 @@
 
         <!-- Open-Source Projects -->
         <section class="section" id="projects">
-            <h2 class="section-title">Open-Source Projects</h2>
+            <h2 class="section-title" data-i18n="section.projects">Open-Source Projects</h2>
             <article class="project-entry">
                 <div class="project-header">
                     <div>
                         <h3 class="project-title">LongVideoClaw</h3>
-                        <p class="project-subtitle">交互式长视频理解多智能体系统</p>
+                        <p class="project-subtitle" data-i18n="project.subtitle">Interactive Multi-Agent System for Long-Video Understanding</p>
                     </div>
-                    <a href="https://github.com/panhh0804/LongVideoClaw" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="在 GitHub 上查看 LongVideoClaw">
+                    <a href="https://github.com/panhh0804/LongVideoClaw" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View LongVideoClaw on GitHub">
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
-                <p class="project-description">
-                    构建“规划—定位—推理—审核—修正”的多智能体闭环，通过 Super / Macro / Micro Event 多级记忆图谱定位长视频中的关键片段，
-                    并结合帧级视觉推理与 Visual Critic 证据审核，实现可追溯、可自我修正的长视频问答。
+                <p class="project-description" data-i18n="project.description">
+                    LongVideoClaw implements a multi-agent loop for planning, localization, reasoning, verification, and revision. A hierarchical Super / Macro / Micro Event memory graph identifies key segments in long videos, while frame-level visual reasoning and a Visual Critic enable evidence-grounded, traceable, and self-correcting video question answering.
                 </p>
-                <div class="project-highlights" aria-label="LongVideoClaw 核心特性">
-                    <span><i class="fas fa-layer-group"></i> 层次化记忆检索</span>
-                    <span><i class="fas fa-location-crosshairs"></i> 时序语义定位</span>
-                    <span><i class="fas fa-eye"></i> 帧级视觉推理</span>
-                    <span><i class="fas fa-rotate"></i> Critic 自校正闭环</span>
-                </div>
             </article>
         </section>
 
         <!-- Research Experience -->
         <section class="section" id="experience">
-            <h2 class="section-title">Research Experience</h2>
+            <h2 class="section-title" data-i18n="section.experience">Research Experience</h2>
             <div class="exp-list">
                 <div class="exp-item">
                     <div class="exp-header">
                         <div class="exp-title-row">
-                            <div class="exp-title"><i class="fas fa-tag"></i> 基于标签感知提示检索 (LaPR) 的视觉上下文学习研究</div>
+                            <div class="exp-title"><i class="fas fa-tag"></i><span data-i18n="experience.lapr.title">Label-Aware Prompt Retrieval for Visual In-Context Learning (LaPR)</span></div>
                             <div class="exp-date-line"><i class="fas fa-calendar"></i> 2025.08 — 2025.11</div>
                         </div>
                         <div class="exp-meta">
-                            <span class="exp-org"><i class="fas fa-university"></i> 清华大学深圳国际研究生院</span>
-                            <span class="exp-advisor"><i class="fas fa-chalkboard-user"></i> 导师：夏树涛教授</span>
-                            <span class="exp-mentor"><i class="fas fa-user-graduate"></i> Mentor：王锦鹏</span>
+                            <span class="exp-org"><span class="school-name" data-i18n="institution.tsinghua">Tsinghua University</span></span>
                         </div>
                     </div>
                     <div class="exp-body">
-                        <p>针对视觉上下文学习 (VICL) 中示例检索忽略标签一致性导致性能退化的问题，主导提出并开发了标签感知提示检索框架 (LaPR)：</p>
+                        <p data-i18n="experience.lapr.summary">To address performance degradation caused by prompt retrieval that overlooks label consistency in visual in-context learning (VICL), I led the development of the label-aware prompt retrieval framework LaPR:</p>
                         <ul>
-                            <li>设计图像-标签联合表示，在上下文提示中引入视觉标签信息；</li>
-                            <li>在提示、查询两侧编码器中引入带查询自适应路由的专家混合机制 (MoE) 确保标签一致性；</li>
-                            <li>在前景分割、目标检测和图像着色任务上取得 SOTA 效果；</li>
-                            <li>以共同第一作者身份在 <strong>CVPR 2026</strong> 发表论文。</li>
+                            <li data-i18n="experience.lapr.b1">Designed a joint image-label representation that incorporates visual label information into in-context prompts.</li>
+                            <li data-i18n="experience.lapr.b2">Introduced mixture-of-experts (MoE) modules with query-adaptive routing in both prompt and query encoders to maintain label consistency.</li>
+                            <li data-i18n="experience.lapr.b3">Achieved state-of-the-art results on foreground segmentation, object detection, and image colorization.</li>
+                            <li data-i18n-html="experience.lapr.b4">Published at <strong>CVPR 2026</strong> as a co-first author.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="exp-item">
                     <div class="exp-header">
                         <div class="exp-title-row">
-                            <div class="exp-title"><i class="fas fa-shapes"></i> 基于视觉上下文学习 (VICL) 的视觉抽象推理 (ARC) 研究</div>
+                            <div class="exp-title"><i class="fas fa-shapes"></i><span data-i18n="experience.mira.title">Visual Abstract Reasoning with Visual In-Context Learning (MIRA)</span></div>
                             <div class="exp-date-line"><i class="fas fa-calendar"></i> 2025.12 — 2026.07</div>
                         </div>
                         <div class="exp-meta">
-                            <span class="exp-org"><i class="fas fa-university"></i> 清华大学深圳国际研究生院</span>
-                            <span class="exp-advisor"><i class="fas fa-chalkboard-user"></i> 导师：夏树涛教授</span>
-                            <span class="exp-mentor"><i class="fas fa-user-graduate"></i> Mentor：王锦鹏</span>
+                            <span class="exp-org"><span class="school-name" data-i18n="institution.tsinghua">Tsinghua University</span></span>
                         </div>
                     </div>
                     <div class="exp-body">
-                        <p>针对 ARC 任务中现有视觉生成方法单一任务表示难以编码复杂变换规则的问题，提出并开发基于视觉上下文的类比推理框架 (MIRA)：</p>
+                        <p data-i18n="experience.mira.summary">To address the difficulty of encoding complex transformation rules with a single task representation in ARC, I proposed and developed MIRA, a visual-context-based analogical reasoning framework:</p>
                         <ul>
-                            <li>将示例与查询图像构建为显式的上下文序列作为模型输入；</li>
-                            <li>引入上下文适配器，通过逐对示例的自注意力机制提取输入-输出变换规则；</li>
-                            <li>经由交叉注意力机制将提取的规则动态应用至查询图像，实现基于上下文信息的类比推理；</li>
-                            <li>主导项目，提出 MIRA 框架，负责全部实验代码与论文撰写。</li>
+                            <li data-i18n="experience.mira.b1">Constructed explicit context sequences from demonstrations and query images as model inputs.</li>
+                            <li data-i18n="experience.mira.b2">Introduced a context adapter that extracts input-output transformation rules through pairwise self-attention over demonstrations.</li>
+                            <li data-i18n="experience.mira.b3">Applied the extracted rules dynamically to query images through cross-attention for context-driven analogical reasoning.</li>
+                            <li data-i18n="experience.mira.b4">Led the project, proposed the MIRA framework, and completed the experimental implementation and paper writing.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="exp-item">
                     <div class="exp-header">
                         <div class="exp-title-row">
-                            <div class="exp-title"><i class="fas fa-headset"></i> 全双工语音对话模型评估基准 (FLEXI) 研究</div>
+                            <div class="exp-title"><i class="fas fa-headset"></i><span data-i18n="experience.flexi.title">Full-Duplex Speech Dialogue Model Evaluation Benchmark (FLEXI)</span></div>
                             <div class="exp-date-line"><i class="fas fa-calendar"></i> 2025.07 — 2025.09</div>
                         </div>
                         <div class="exp-meta">
-                            <span class="exp-org"><i class="fas fa-university"></i> 东北大学自然语言处理实验室</span>
-                            <span class="exp-advisor"><i class="fas fa-chalkboard-user"></i> 导师：肖桐教授</span>
-                            <span class="exp-mentor"><i class="fas fa-user-graduate"></i> Mentor：葛源</span>
+                            <span class="exp-org"><i class="fas fa-university"></i> NEUNLPLab</span>
                         </div>
                     </div>
                     <div class="exp-body">
-                        <p>参与首个针对全双工 (Full-Duplex) 语音模型的评估基准 FLEXI 的构建与实验工作：</p>
+                        <p data-i18n="experience.flexi.summary">Contributed to the development and evaluation of FLEXI, the first benchmark for full-duplex speech dialogue models:</p>
                         <ul>
-                            <li>参与基准中六个人机交互场景及评价指标设计；</li>
-                            <li>负责基准测试所需实验数据的筛选和清洗；</li>
-                            <li>协助进行对现有开源 LLMs 的性能评估。</li>
+                            <li data-i18n="experience.flexi.b1">Contributed to the design of six human-machine interaction scenarios and their evaluation metrics.</li>
+                            <li data-i18n="experience.flexi.b2">Curated and cleaned the experimental data used in benchmark evaluation.</li>
+                            <li data-i18n="experience.flexi.b3">Assisted in evaluating the performance of existing open-source LLMs.</li>
                         </ul>
                     </div>
                 </div>
@@ -313,40 +306,40 @@
 
         <!-- Awards & Honors -->
         <section class="section" id="awards">
-            <h2 class="section-title">Selected Awards</h2>
+            <h2 class="section-title" data-i18n="section.awards">Selected Awards</h2>
             <div class="award-list">
                 <div class="award-item">
                     <div class="award-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="award-name">全国大学生数学建模竞赛，国家级二等奖</div>
-                    <div class="award-note"><i class="fas fa-arrow-trend-up"></i> 全国前 2.43%</div>
+                    <div class="award-name" data-i18n="award.cumcm">National College Student Mathematical Modeling Contest, National Second Prize</div>
+                    <div class="award-note"><i class="fas fa-arrow-trend-up"></i><span data-i18n="award.national.rank">National top 2.43%</span></div>
                     <div class="award-year">2025</div>
                 </div>
                 <div class="award-item">
                     <div class="award-icon"><i class="fas fa-globe"></i></div>
-                    <div class="award-name">美国大学生数学建模竞赛 (MCM/ICM)，Honorable Mention</div>
-                    <div class="award-note"><i class="fas fa-medal"></i> 两次获奖</div>
+                    <div class="award-name" data-i18n="award.mcm">Mathematical Contest in Modeling (MCM/ICM), Honorable Mention</div>
+                    <div class="award-note"><i class="fas fa-medal"></i><span data-i18n="award.twice">Awarded twice</span></div>
                     <div class="award-year">2025, 2026</div>
                 </div>
                 <div class="award-item">
                     <div class="award-icon"><i class="fas fa-medal"></i></div>
-                    <div class="award-name">优秀学生标兵</div>
-                    <div class="award-note"><i class="fas fa-ranking-star"></i> 学院前 1%</div>
+                    <div class="award-name" data-i18n="award.student">Outstanding Student Honor</div>
+                    <div class="award-note"><i class="fas fa-ranking-star"></i><span data-i18n="award.school.top1">Top 1% in the school</span></div>
                     <div class="award-year">2024</div>
                 </div>
                 <div class="award-item">
                     <div class="award-icon"><i class="fas fa-coins"></i></div>
-                    <div class="award-name">校一等奖学金</div>
-                    <div class="award-note"><i class="fas fa-ranking-star"></i> 学院前 3%</div>
+                    <div class="award-name" data-i18n="award.scholarship">University First-Class Scholarship</div>
+                    <div class="award-note"><i class="fas fa-ranking-star"></i><span data-i18n="award.school.top3">Top 3% in the school</span></div>
                     <div class="award-year">2024</div>
                 </div>
             </div>
         </section>
 
         <footer class="footer">
-            <p><i class="fas fa-copyright"></i> <span id="copyright-year">2026</span> Haohao Pan (潘好好). Last updated: <time id="last-updated" datetime="2026-11-16">November 16, 2026</time>.</p>
-            <p class="visitor-stats" aria-label="网站浏览量" aria-live="polite">
+            <p><i class="fas fa-copyright"></i> <span id="copyright-year">2026</span> <span data-i18n-html="footer.owner">Haohao Pan.</span> <span data-i18n="footer.updated">Last updated:</span> <time id="last-updated" datetime="2026-11-16">November 16, 2026</time>.</p>
+            <p class="visitor-stats" aria-label="Total page views" aria-live="polite">
                 <i class="far fa-eye" aria-hidden="true"></i>
-                总浏览量 <strong id="busuanzi_site_pv">统计中…</strong><span id="visitor-unit">次</span>
+                <span data-i18n="footer.views">Total views:</span> <strong id="busuanzi_site_pv">Loading...</strong><span id="visitor-unit"></span>
             </p>
         </footer>
     </div>
@@ -391,44 +384,183 @@
         window.addEventListener('scroll', updateActiveNav, { passive: true });
         updateActiveNav();
 
-        // Keep footer metadata current.
+        // Single-page English / Chinese localization.
+        const languageToggle = document.getElementById('language-toggle');
+        const localizedNodes = [...document.querySelectorAll('[data-i18n], [data-i18n-html]')];
+        const englishContent = new Map(localizedNodes.map(node => [
+            node,
+            node.hasAttribute('data-i18n-html') ? node.innerHTML : node.textContent
+        ]));
+        const zhTranslations = {
+            'nav.biography': '简介',
+            'nav.news': '新闻',
+            'nav.news': '新闻',
+            'nav.research': '研究',
+            'nav.publications': '论文',
+            'nav.projects': '项目',
+            'nav.experience': '科研',
+            'nav.awards': '获奖',
+            'profile.name': '潘好好 <span class="name-en">Haohao Pan</span>',
+            'section.biography': '个人简介',
+            'section.news': '新闻',
+            'news.date': '[2026年9月]',
+            'news.zju': `我已获得<a class="institution-link" href="https://www.zju.edu.cn/" target="_blank" rel="noopener noreferrer">浙江大学</a>人工智能学院直博录取资格，计划于 2027 年秋季入学。`,
+            'bio.p1': `目前是<a class="institution-link" href="https://www.neu.edu.cn/" target="_blank" rel="noopener noreferrer">东北大学</a>计算机科学与技术专业本科生。本科期间，我曾在<a class="institution-link" href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer">清华大学</a>开展科研实习，研究工作主要围绕<strong>视觉上下文学习（Visual In-Context Learning）</strong>、<strong>多模态大模型</strong>与<strong>视觉抽象推理</strong>展开，关注如何利用上下文示例提升视觉模型的任务适应能力，以及如何增强模型对视觉结构与抽象规则的理解和推理能力。`,
+            'bio.p2': `博士阶段，我计划进一步探索<strong>具身智能（Embodied AI）与世界模型（World Models）</strong>，重点关注智能体如何通过环境交互学习物理属性与动力学规律，以及如何将所获得的知识迁移至不同物体与任务，以提升开放环境中的泛化能力与自主决策能力。`,
+            'institution.neu': '东北大学',
+            'institution.zju': '浙江大学',
+            'institution.tsinghua': '清华大学',
+            'education.math.degree': '数学类（本科｜大一转出）',
+            'education.math.rank': '大一学年 <strong>专业前 5%</strong>',
+            'education.cs.date': '2024.09 — 2027.06（预计）',
+            'education.cs.degree': '计算机科学与技术（本科｜大二转入）',
+            'education.cs.rank': '<strong>大学三年综合排名 9/215（专业前 4.2%）</strong>',
+            'education.zju.date': '2027.09 —',
+            'education.zju.degree': '人工智能（推免直博） <span class="incoming-label">拟入学</span>',
+            'internship.role': '科研实习',
+            'internship.flexi': '全双工语音对话模型评估基准（FLEXI）研究',
+            'internship.tsinghua.topic': '视觉上下文学习与视觉抽象推理（LaPR、MIRA）',
+            'section.research': '研究兴趣',
+            'research.statement': '我的研究兴趣集中于<strong>空间智能（Spatial Intelligence）</strong>、<strong>具身智能（Embodied Intelligence）</strong>与<strong>智能体（AI Agent）</strong>。我关注智能系统对三维空间、场景结构与物理关系的理解与推理，研究感知、规划与行动闭环，以及智能体在真实或仿真环境中的学习，并进一步探索多模态智能体的任务规划、工具使用、环境交互与长程自主行动能力。',
+            'section.publications': '论文发表',
+            'publication.view': '查看大图',
+            'publication.note': '共同第一作者，提出标签感知提示检索框架 LaPR，在前景分割、目标检测和图像着色任务上取得 SOTA 效果',
+            'section.projects': '开源项目',
+            'project.subtitle': '交互式长视频理解多智能体系统',
+            'project.description': '构建“规划—定位—推理—审核—修正”的多智能体闭环，通过 Super / Macro / Micro Event 多级记忆图谱定位长视频中的关键片段，并结合帧级视觉推理与 Visual Critic 证据审核，实现可追溯、可自我修正的长视频问答。',
+            'section.experience': '科研经历',
+            'experience.lapr.title': '基于标签感知提示检索（LaPR）的视觉上下文学习研究',
+            'experience.lapr.summary': '针对视觉上下文学习（VICL）中示例检索忽略标签一致性导致性能退化的问题，主导提出并开发了标签感知提示检索框架（LaPR）：',
+            'experience.lapr.b1': '设计图像-标签联合表示，在上下文提示中引入视觉标签信息；',
+            'experience.lapr.b2': '在提示、查询两侧编码器中引入带查询自适应路由的专家混合机制（MoE）确保标签一致性；',
+            'experience.lapr.b3': '在前景分割、目标检测和图像着色任务上取得 SOTA 效果；',
+            'experience.lapr.b4': '以共同第一作者身份在 <strong>CVPR 2026</strong> 发表论文。',
+            'experience.mira.title': '基于视觉上下文学习（VICL）的视觉抽象推理（ARC）研究',
+            'experience.mira.summary': '针对 ARC 任务中现有视觉生成方法单一任务表示难以编码复杂变换规则的问题，提出并开发基于视觉上下文的类比推理框架（MIRA）：',
+            'experience.mira.b1': '将示例与查询图像构建为显式的上下文序列作为模型输入；',
+            'experience.mira.b2': '引入上下文适配器，通过逐对示例的自注意力机制提取输入-输出变换规则；',
+            'experience.mira.b3': '经由交叉注意力机制将提取的规则动态应用至查询图像，实现基于上下文信息的类比推理；',
+            'experience.mira.b4': '主导项目，提出 MIRA 框架，负责全部实验代码与论文撰写。',
+            'experience.flexi.title': '全双工语音对话模型评估基准（FLEXI）研究',
+            'experience.flexi.summary': '参与首个针对全双工（Full-Duplex）语音模型的评估基准 FLEXI 的构建与实验工作：',
+            'experience.flexi.b1': '参与基准中六个人机交互场景及评价指标设计；',
+            'experience.flexi.b2': '负责基准测试所需实验数据的筛选和清洗；',
+            'experience.flexi.b3': '协助进行对现有开源 LLMs 的性能评估。',
+            'section.awards': '代表性获奖',
+            'award.cumcm': '全国大学生数学建模竞赛，国家级二等奖',
+            'award.national.rank': '全国前 2.43%',
+            'award.mcm': '美国大学生数学建模竞赛（MCM/ICM），Honorable Mention',
+            'award.twice': '两次获奖',
+            'award.student': '优秀学生标兵',
+            'award.school.top1': '学院前 1%',
+            'award.scholarship': '校一等奖学金',
+            'award.school.top3': '学院前 3%',
+            'footer.owner': 'Haohao Pan（潘好好）.',
+            'footer.updated': '最后更新：',
+            'footer.views': '总浏览量'
+        };
+
+        const pageViewCounter = document.getElementById('busuanzi_site_pv');
+        const visitorUnit = document.getElementById('visitor-unit');
         const copyrightYear = document.getElementById('copyright-year');
         const lastUpdated = document.getElementById('last-updated');
         const modifiedAt = new Date(document.lastModified);
+        let currentLanguage = new URLSearchParams(window.location.search).get('lang') === 'zh' ? 'zh' : 'en';
+        let counterState = 'loading';
+        let counterValue = '';
 
-        copyrightYear.textContent = String(new Date().getFullYear());
-        if (!Number.isNaN(modifiedAt.getTime())) {
-            lastUpdated.textContent = new Intl.DateTimeFormat('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            }).format(modifiedAt);
-            lastUpdated.dateTime = modifiedAt.toISOString().slice(0, 10);
+        function updateFooterDate() {
+            copyrightYear.textContent = String(new Date().getFullYear());
+            if (!Number.isNaN(modifiedAt.getTime())) {
+                lastUpdated.textContent = new Intl.DateTimeFormat(currentLanguage === 'zh' ? 'zh-CN' : 'en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                }).format(modifiedAt);
+                lastUpdated.dateTime = modifiedAt.toISOString().slice(0, 10);
+            }
         }
+
+        function updateCounterLocale() {
+            const messages = currentLanguage === 'zh'
+                ? { loading: '统计中…', local: '仅线上统计', unavailable: '暂不可用' }
+                : { loading: 'Loading...', local: 'Available online only', unavailable: 'Unavailable' };
+
+            if (counterState === 'value') {
+                pageViewCounter.textContent = counterValue;
+                visitorUnit.textContent = currentLanguage === 'zh' ? '次' : '';
+                visitorUnit.hidden = currentLanguage !== 'zh';
+            } else {
+                pageViewCounter.textContent = messages[counterState];
+                visitorUnit.hidden = true;
+            }
+        }
+
+        function applyLanguage(language, updateUrl = false) {
+            currentLanguage = language === 'zh' ? 'zh' : 'en';
+            localizedNodes.forEach(node => {
+                const isHtml = node.hasAttribute('data-i18n-html');
+                const key = isHtml ? node.dataset.i18nHtml : node.dataset.i18n;
+                const content = currentLanguage === 'zh' ? zhTranslations[key] : englishContent.get(node);
+                if (content === undefined) return;
+                if (isHtml) node.innerHTML = content;
+                else node.textContent = content;
+            });
+
+            document.documentElement.lang = currentLanguage === 'zh' ? 'zh-CN' : 'en';
+            document.title = currentLanguage === 'zh' ? '潘好好 - 个人学术主页' : 'Haohao Pan - Academic Homepage';
+            languageToggle.textContent = currentLanguage === 'zh' ? 'English' : '中文';
+            languageToggle.setAttribute('aria-label', currentLanguage === 'zh' ? '切换至英文版' : 'Switch to the Chinese version');
+            document.querySelector('.navbar').setAttribute('aria-label', currentLanguage === 'zh' ? '主导航' : 'Primary navigation');
+            document.querySelector('.academic-timeline').setAttribute('aria-label', currentLanguage === 'zh' ? '教育经历时间轴' : 'Education timeline');
+            document.querySelector('.internship-timeline').setAttribute('aria-label', currentLanguage === 'zh' ? '科研实习时间轴' : 'Research internship timeline');
+            document.querySelector('.pub-visual').setAttribute('aria-label', currentLanguage === 'zh' ? '查看 LaPR 框架图' : 'View the LaPR framework figure');
+            document.querySelector('.project-link').setAttribute('aria-label', currentLanguage === 'zh' ? '在 GitHub 上查看 LongVideoClaw' : 'View LongVideoClaw on GitHub');
+            document.querySelector('.visitor-stats').setAttribute('aria-label', currentLanguage === 'zh' ? '网站浏览量' : 'Total page views');
+            updateFooterDate();
+            updateCounterLocale();
+
+            if (updateUrl) {
+                const url = new URL(window.location.href);
+                if (currentLanguage === 'zh') url.searchParams.set('lang', 'zh');
+                else url.searchParams.delete('lang');
+                try {
+                    window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+                } catch (error) {
+                    // file:// previews can reject history mutations in some browsers.
+                }
+            }
+        }
+
+        languageToggle.addEventListener('click', () => {
+            applyLanguage(currentLanguage === 'en' ? 'zh' : 'en', true);
+        });
+
+        applyLanguage(currentLanguage);
 
         // Busuanzi rejects file://, localhost and IP previews. Only request a
         // real page-view count on a public hostname, and never leave the UI
         // indefinitely in a loading state.
-        const pageViewCounter = document.getElementById('busuanzi_site_pv');
-        const visitorUnit = document.getElementById('visitor-unit');
         const hostname = window.location.hostname;
         const isLocalPreview = window.location.protocol === 'file:' ||
             hostname === 'localhost' ||
             hostname === '127.0.0.1' ||
             hostname === '::1';
 
-        function showCounterStatus(message) {
-            pageViewCounter.textContent = message;
-            visitorUnit.hidden = true;
+        function showCounterStatus(state) {
+            counterState = state;
+            updateCounterLocale();
         }
 
         if (isLocalPreview) {
-            showCounterStatus('仅线上统计');
+            showCounterStatus('local');
         } else {
             const counterObserver = new MutationObserver(() => {
                 const value = pageViewCounter.textContent.trim();
                 if (/^[0-9,.]+$/.test(value)) {
-                    visitorUnit.hidden = false;
+                    counterState = 'value';
+                    counterValue = value;
+                    updateCounterLocale();
                     counterObserver.disconnect();
                 }
             });
@@ -437,21 +569,21 @@
             const counterScript = document.createElement('script');
             counterScript.src = 'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js';
             counterScript.async = true;
-            counterScript.onerror = () => showCounterStatus('暂不可用');
+            counterScript.onerror = () => showCounterStatus('unavailable');
             document.head.appendChild(counterScript);
 
             window.setTimeout(() => {
                 if (!/^[0-9,.]+$/.test(pageViewCounter.textContent.trim())) {
                     counterObserver.disconnect();
-                    showCounterStatus('暂不可用');
+                    showCounterStatus('unavailable');
                 }
             }, 8000);
         }
     </script>
 
     <!-- Image Modal -->
-    <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-label="图片预览" aria-hidden="true">
-        <button type="button" class="modal-close" aria-label="关闭图片预览">&times;</button>
+    <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+        <button type="button" class="modal-close" aria-label="Close image preview">&times;</button>
         <img class="modal-content" id="modalImg" src="paper.png" alt="LaPR Framework" width="2360" height="1246" loading="lazy" decoding="async">
     </div>
 
@@ -459,7 +591,21 @@
         const modal = document.getElementById('imgModal');
         const modalImg = document.getElementById('modalImg');
         const modalClose = modal.querySelector('.modal-close');
+        const modalLanguageToggle = document.getElementById('language-toggle');
         let lastFocusedElement = null;
+
+        function isChinesePage() {
+            return document.documentElement.lang.toLowerCase().startsWith('zh');
+        }
+
+        function updateModalLanguage() {
+            const isChinese = isChinesePage();
+            modal.setAttribute('aria-label', isChinese ? '图片预览' : 'Image preview');
+            modalClose.setAttribute('aria-label', isChinese ? '关闭图片预览' : 'Close image preview');
+        }
+
+        modalLanguageToggle.addEventListener('click', updateModalLanguage);
+        updateModalLanguage();
 
         document.querySelectorAll('[data-modal-src]').forEach(trigger => {
             trigger.addEventListener('click', () => {
@@ -472,7 +618,7 @@
 
             lastFocusedElement = document.activeElement;
             modalImg.src = src;
-            modalImg.alt = alt || '图片预览';
+            modalImg.alt = alt || (isChinesePage() ? '图片预览' : 'Image preview');
             modal.style.display = 'flex';
             modal.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';

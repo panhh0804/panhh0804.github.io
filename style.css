@@ -17,9 +17,9 @@
     --color-accent-light: #426f8f;
     --color-rank-a: #b91c1c;
     --color-rank-b: #c05621;
-    --font-serif: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
     --font-sans: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --max-width: 960px;
+    --font-serif: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+    --max-width: 900px;
     --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
     --shadow-md: 0 2px 8px rgba(0,0,0,0.05);
     --shadow-lg: 0 6px 18px rgba(0,0,0,0.07);
@@ -65,6 +65,11 @@ a:hover {
 
 a:hover::after {
     width: 100%;
+}
+
+.institution-link,
+.school-name {
+    white-space: nowrap;
 }
 
 :focus-visible {
@@ -113,6 +118,31 @@ a:hover::after {
     display: flex;
     list-style: none;
     gap: 6px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.language-toggle {
+    flex-shrink: 0;
+    padding: 4px 9px;
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--color-muted);
+    font: inherit;
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.language-toggle:hover {
+    border-color: var(--color-accent-light);
+    color: var(--color-accent);
 }
 
 .nav-menu a {
@@ -323,6 +353,30 @@ a:hover::after {
     text-align: justify;
 }
 
+.news-item {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: baseline;
+    gap: 12px;
+    margin: 0 0 4px 4px;
+    padding: 10px 0;
+}
+
+.news-item time {
+    white-space: nowrap;
+    color: var(--color-muted);
+    font-size: 15px;
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+}
+
+.news-item p {
+    margin: 0;
+    color: var(--color-secondary);
+    font-size: 15px;
+    line-height: 1.75;
+}
+
 /* Timeline - Education */
 .timeline {
     display: flex;
@@ -399,7 +453,7 @@ a:hover::after {
 .timeline-date {
     font-size: 13px;
     color: var(--color-light);
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
 }
 
 .timeline-degree {
@@ -518,7 +572,7 @@ a:hover::after {
     display: block;
     margin-top: 1px;
     color: var(--color-light);
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
     font-size: 12px;
     white-space: nowrap;
 }
@@ -577,8 +631,10 @@ a:hover::after {
     align-items: stretch;
     gap: 10px;
     position: relative;
-    margin: 6px 0 0;
+    width: calc(100% - 4px);
+    margin: 6px 0 0 4px;
     padding: 0;
+    font-family: var(--font-sans);
     list-style: none;
 }
 
@@ -607,6 +663,22 @@ a:hover::after {
     position: relative;
     min-width: 0;
     padding: 0 7px 34px;
+}
+
+.academic-step:first-child {
+    padding-left: 0;
+}
+
+.academic-step:last-child {
+    padding-right: 0;
+}
+
+.academic-step:first-child .academic-card {
+    margin-left: 0;
+}
+
+.academic-step:last-child .academic-card {
+    margin-right: 0;
 }
 
 .academic-step-cs {
@@ -702,22 +774,23 @@ a:hover::after {
     padding: 0;
     color: var(--color-primary);
     background: transparent;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.35;
-}
-
-.academic-institution i {
-    color: var(--stage-color);
-    font-size: 12px;
+    white-space: nowrap;
 }
 
 .academic-card h3 {
     margin: 7px 0 0;
     color: var(--color-secondary);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.5;
+}
+
+.academic-card h3 .incoming-label {
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 .academic-period {
@@ -733,7 +806,7 @@ a:hover::after {
     padding: 0 6px;
     color: var(--period-color);
     background: transparent;
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
     font-size: 10.5px;
     font-weight: 600;
     line-height: 1.45;
@@ -744,7 +817,7 @@ a:hover::after {
 .academic-rank {
     margin: 7px 0 0;
     color: var(--color-secondary);
-    font-size: 12.5px;
+    font-size: 10.5px;
     line-height: 1.55;
 }
 
@@ -759,8 +832,10 @@ a:hover::after {
 
 .internship-timeline {
     position: relative;
+    width: calc(100% - 4px);
     height: 194px;
-    margin-top: 5px;
+    margin: 5px 0 0 4px;
+    font-family: var(--font-sans);
 }
 
 .internship-timeline::before {
@@ -847,8 +922,8 @@ a:hover::after {
     color: var(--intern-accent);
     background: #eef5fc;
     border-radius: 5px;
-    font-family: 'SF Mono', Monaco, monospace;
-    font-size: 11px;
+    font-family: var(--font-sans);
+    font-size: 10.5px;
     font-weight: 600;
     line-height: 1.4;
     text-align: center;
@@ -863,14 +938,15 @@ a:hover::after {
 
 .internship-card-heading h3 {
     flex: 1;
-    margin: 0;
+    margin: 0 0 0 6px;
     color: var(--intern-accent);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.35;
+    white-space: nowrap;
 }
 
-.internship-card-heading span {
+.internship-card-heading > span {
     display: inline-flex;
     align-items: center;
     flex-shrink: 0;
@@ -879,12 +955,12 @@ a:hover::after {
     color: var(--color-muted);
     background: #f1f5f9;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 10.5px;
     font-weight: 600;
     white-space: nowrap;
 }
 
-.internship-card-heading span i {
+.internship-card-heading > span i {
     color: var(--intern-accent);
     font-size: 9px;
 }
@@ -892,7 +968,7 @@ a:hover::after {
 .internship-card > p {
     margin: 9px 0 0;
     color: var(--color-muted);
-    font-size: 11.5px;
+    font-size: 10.5px;
     line-height: 1.5;
     text-align: center;
 }
@@ -901,6 +977,8 @@ a:hover::after {
     .academic-timeline {
         grid-template-columns: 1fr;
         gap: 6px;
+        width: 100%;
+        margin-left: 0;
         padding-left: 0;
     }
 
@@ -918,6 +996,18 @@ a:hover::after {
     .academic-step {
         justify-content: flex-start;
         padding: 0 0 14px 18px;
+    }
+
+    .academic-step:first-child,
+    .academic-step:last-child {
+        padding-right: 0;
+        padding-left: 18px;
+    }
+
+    .academic-step:first-child .academic-card,
+    .academic-step:last-child .academic-card {
+        margin-right: 3px;
+        margin-left: 3px;
     }
 
     .academic-step::before {
@@ -966,8 +1056,10 @@ a:hover::after {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
+        width: 100%;
         height: auto;
         margin-top: 14px;
+        margin-left: 0;
         padding-left: 18px;
     }
 
@@ -1273,7 +1365,7 @@ a:hover::after {
 }
 
 .pub-badges-row .pub-id {
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
     font-size: 20px;
     font-weight: 700;
     color: var(--color-rank-a);
@@ -1424,17 +1516,17 @@ a:hover::after {
 
 .publication-entry .pub-venue-badge {
     position: absolute;
-    top: -10px;
-    left: -8px;
+    top: -7px;
+    left: -6px;
     z-index: 2;
-    min-width: 126px;
-    padding: 6px 14px 7px;
+    min-width: 104px;
+    padding: 4px 10px 5px;
     border-radius: 4px;
     background: #07346f;
-    box-shadow: 0 5px 11px rgba(7, 52, 111, 0.26);
+    box-shadow: 0 4px 9px rgba(7, 52, 111, 0.22);
     color: #fff;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 16px;
+    font-family: var(--font-sans);
+    font-size: 13px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.01em;
@@ -1495,7 +1587,7 @@ a:hover::after {
 .publication-entry .pub-id {
     flex-shrink: 0;
     color: var(--color-light);
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
     font-size: 12px;
     font-weight: 500;
 }
@@ -1700,7 +1792,7 @@ a:hover::after {
 .exp-date-line {
     font-size: 13px;
     color: var(--color-light);
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
     display: flex;
     align-items: center;
     gap: 5px;
@@ -1734,6 +1826,7 @@ a:hover::after {
     padding: 3px 10px;
     background: #e0e7ff;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 .exp-org i { font-size: 11px; }
@@ -1875,7 +1968,7 @@ a:hover::after {
     min-width: 60px;
     text-align: right;
     color: var(--color-light);
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
     font-size: 13px;
     white-space: nowrap;
     position: relative;
@@ -2219,7 +2312,7 @@ a:hover::after {
 .visitor-stats strong {
     margin: 0 3px;
     color: var(--color-muted);
-    font-family: 'SF Mono', Monaco, monospace;
+    font-family: var(--font-sans);
     font-weight: 600;
 }
 
@@ -2382,6 +2475,22 @@ a:hover::after {
     }
 }
 
+/* Keep prose typography consistent across the main content sections. */
+.section-body p,
+.news-item time,
+.news-item p,
+.research-statement,
+.project-description,
+.exp-body,
+.exp-body p,
+.exp-body li,
+.award-item,
+.award-name,
+.award-note {
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -2404,7 +2513,7 @@ a:hover::after {
     border: 0;
     background: transparent;
     color: #fff;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1;
     font-weight: 300;
     font-family: inherit;
