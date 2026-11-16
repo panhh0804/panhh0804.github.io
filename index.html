@@ -19,12 +19,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=7">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -46,7 +45,8 @@
                 "Visual Reasoning"
             ],
             "sameAs": [
-                "https://scholar.google.com/citations?user=-yHMLr8AAAAJ&hl=en"
+                "https://scholar.google.com/citations?user=-yHMLr8AAAAJ&hl=en",
+                "https://github.com/panhh0804"
             ]
         }
     </script>
@@ -57,14 +57,12 @@
         <div class="nav-inner">
             <a href="#home" class="nav-logo">Haohao Pan</a>
             <ul class="nav-menu">
-                <li><a href="#about"><i class="fas fa-user"></i> 简介</a></li>
-                <li><a href="#research"><i class="fas fa-lightbulb"></i> 研究</a></li>
-                <li><a href="#publications"><i class="fas fa-file-lines"></i> 论文</a></li>
-                <li><a href="#projects"><i class="fas fa-code-branch"></i> 项目</a></li>
-                <li><a href="#experience"><i class="fas fa-flask"></i> 科研</a></li>
-                <li><a href="#awards"><i class="fas fa-trophy"></i> 获奖</a></li>
-                <li><a href="#skills"><i class="fas fa-code"></i> 技能</a></li>
-                <li><a href="#misc"><i class="fas fa-star"></i> 其他</a></li>
+                <li><a href="#about">Biography</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#awards">Awards</a></li>
             </ul>
         </div>
     </nav>
@@ -82,11 +80,11 @@
                         <a href="mailto:panhh@mails.neu.edu.cn" class="contact-item">
                             <i class="fas fa-envelope"></i> panhh@mails.neu.edu.cn
                         </a>
-                        <span class="contact-item">
-                            <i class="fas fa-phone"></i> (+86) 158-6806-8442
-                        </span>
                         <a href="https://scholar.google.com/citations?user=-yHMLr8AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="contact-item">
                             <i class="fas fa-graduation-cap"></i> Google Scholar
+                        </a>
+                        <a href="https://github.com/panhh0804" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
@@ -95,7 +93,7 @@
 
         <!-- Biography -->
         <section class="section" id="about">
-            <h2 class="section-title"><i class="fas fa-id-card"></i> 个人简介 / Biography</h2>
+            <h2 class="section-title">Biography</h2>
             <div class="section-body">
                 <p>
                     我是<a href="https://www.neu.edu.cn/" target="_blank" rel="noopener noreferrer">东北大学</a>计算机科学与工程学院本科生，
@@ -168,102 +166,56 @@
 
         <!-- Research Interests -->
         <section class="section" id="research">
-            <h2 class="section-title"><i class="fas fa-lightbulb"></i> 研究兴趣 / Research Interests</h2>
+            <h2 class="section-title">Research Interests</h2>
             <div class="section-body">
-                <p>研究生阶段，我计划重点探索以下方向：</p>
-                <div class="interest-grid">
-                    <div class="interest-card">
-                        <div class="interest-icon"><i class="fas fa-cubes"></i></div>
-                        <h3>空间智能</h3>
-                        <p>Spatial Intelligence，关注智能系统对三维空间、场景结构与物理关系的理解和推理。</p>
-                    </div>
-                    <div class="interest-card">
-                        <div class="interest-icon"><i class="fas fa-robot"></i></div>
-                        <h3>具身智能</h3>
-                        <p>Embodied Intelligence，关注感知、规划与行动闭环，以及智能体在真实或仿真环境中的学习。</p>
-                    </div>
-                    <div class="interest-card">
-                        <div class="interest-icon"><i class="fas fa-diagram-project"></i></div>
-                        <h3>智能体 / AI Agent</h3>
-                        <p>关注多模态智能体的任务规划、工具使用、环境交互与长程自主行动能力。</p>
-                    </div>
-                </div>
-                <div class="research-roadmap">
-                    <h3><i class="fas fa-route"></i> 本科阶段研究基础 / Undergraduate Research</h3>
-                    <p>本科期间，我主要围绕视觉上下文学习、多模态大模型与视觉抽象推理开展研究，并形成了以下研究脉络：</p>
-                    <div class="roadmap-flow">
-                        <div class="roadmap-node">
-                            <div class="roadmap-dot"></div>
-                            <div class="roadmap-text">视觉上下文的提示检索</div>
-                        </div>
-                        <div class="roadmap-arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="roadmap-node">
-                            <div class="roadmap-dot"></div>
-                            <div class="roadmap-text">视觉上下文学习的 ARC 应用</div>
-                        </div>
-                        <div class="roadmap-arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="roadmap-node roadmap-future">
-                            <div class="roadmap-dot"></div>
-                            <div class="roadmap-text">视觉上下文的压缩与蒸馏</div>
-                        </div>
-                        <div class="roadmap-arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="roadmap-node roadmap-future">
-                            <div class="roadmap-dot"></div>
-                            <div class="roadmap-text">视觉上下文学习的 Agent 应用</div>
-                        </div>
-                    </div>
-                    <div class="roadmap-questions">
-                        <span class="rq-tag"><i class="fas fa-search"></i> 如何更好地检索样例</span>
-                        <span class="rq-tag"><i class="fas fa-bolt"></i> 如何更好地利用样例</span>
-                        <span class="rq-tag"><i class="fas fa-gauge-high"></i> 如何更高效地利用样例</span>
-                        <span class="rq-tag"><i class="fas fa-globe"></i> 如何更通用地应用 VICL</span>
-                    </div>
-                </div>
+                <p class="research-statement">
+                    我的研究兴趣集中于<strong>空间智能（Spatial Intelligence）</strong>、<strong>具身智能（Embodied Intelligence）</strong>与<strong>智能体（AI Agent）</strong>。
+                    我关注智能系统对三维空间、场景结构与物理关系的理解与推理，研究感知、规划与行动闭环，以及智能体在真实或仿真环境中的学习，并进一步探索多模态智能体的任务规划、工具使用、环境交互与长程自主行动能力。
+                </p>
             </div>
         </section>
 
         <!-- Publications -->
         <section class="section" id="publications">
-            <h2 class="section-title"><i class="fas fa-file-lines"></i> 论文发表 / Publications</h2>
-            <div class="pub-list">
-                <div class="pub-card">
+            <h2 class="section-title">Publications</h2>
+            <ol class="publication-bibliography">
+                <li class="publication-entry">
                     <button type="button" class="pub-visual" data-modal-src="paper.png" data-modal-alt="LaPR Framework" aria-label="放大 LaPR 框架图">
                         <img src="paper.png" alt="LaPR Framework" width="2360" height="1246" loading="lazy" decoding="async">
+                        <span class="pub-venue-badge">CVPR 2026</span>
                         <span class="pub-img-overlay">
-                            <span class="overlay-link"><i class="fas fa-expand"></i> 点击放大</span>
+                            <span class="overlay-link"><i class="fas fa-expand"></i> 查看大图</span>
                         </span>
                     </button>
                     <div class="pub-detail">
-                        <div class="pub-badges-row">
-                            <span class="pub-id">C1</span>
-                            <span class="pub-type type-conf">Conference</span>
-                            <span class="pub-rank rank-a">CCF-A</span>
-                            <span class="pub-status">CVPR 2026</span>
-                        </div>
-                        <h4 class="pub-title">Love Me, Love My Label: Rethinking the Role of Labels in Prompt Retrieval for Visual In-Context Learning</h4>
+                        <h3 class="pub-title">
+                            <span class="pub-id">C1.</span>
+                            <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Luo_Love_Me_Love_My_Label_Rethinking_the_Role_of_Labels_CVPR_2026_paper.pdf" target="_blank" rel="noopener noreferrer">Love Me, Love My Label: Rethinking the Role of Labels in Prompt Retrieval for Visual In-Context Learning</a>
+                        </h3>
                         <p class="pub-authors">
                             Tianci Luo, <strong>Haohao Pan</strong> (Equal Contribution), Jinpeng Wang, Niu Lian, Xinrui Chen, Bin Chen, Shu-Tao Xia, and Chun Yuan
                         </p>
                         <p class="pub-venue">
-                            <i class="fas fa-building-columns"></i> <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
+                            <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
+                            <span class="pub-rank">CCF-A</span>
                         </p>
-                        <p class="pub-note"><i class="fas fa-star"></i> 共同第一作者 · 提出标签感知提示检索框架 LaPR，在前景分割、目标检测和图像着色任务上取得 SOTA 效果</p>
+                        <p class="pub-note">共同第一作者，提出标签感知提示检索框架 LaPR，在前景分割、目标检测和图像着色任务上取得 SOTA 效果</p>
                         <div class="pub-buttons">
                             <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Luo_Love_Me_Love_My_Label_Rethinking_the_Role_of_Labels_CVPR_2026_paper.pdf" target="_blank" rel="noopener noreferrer" class="btn-pdf">
-                                <i class="fas fa-file-pdf"></i> PDF
+                                PDF
                             </a>
                             <a href="https://arxiv.org/abs/2604.03657" target="_blank" rel="noopener noreferrer" class="btn-arxiv">
-                                <i class="fas fa-external-link-alt"></i> arXiv
+                                arXiv
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ol>
         </section>
 
         <!-- Open-Source Projects -->
         <section class="section" id="projects">
-            <h2 class="section-title"><i class="fas fa-code-branch"></i> 开源项目 / Open-Source Projects</h2>
+            <h2 class="section-title">Open-Source Projects</h2>
             <article class="project-entry">
                 <div class="project-header">
                     <div>
@@ -289,7 +241,7 @@
 
         <!-- Research Experience -->
         <section class="section" id="experience">
-            <h2 class="section-title"><i class="fas fa-flask"></i> 科研经历 / Research Experience</h2>
+            <h2 class="section-title">Research Experience</h2>
             <div class="exp-list">
                 <div class="exp-item">
                     <div class="exp-header">
@@ -361,17 +313,17 @@
 
         <!-- Awards & Honors -->
         <section class="section" id="awards">
-            <h2 class="section-title"><i class="fas fa-trophy"></i> 代表性获奖 / Selected Awards</h2>
+            <h2 class="section-title">Selected Awards</h2>
             <div class="award-list">
                 <div class="award-item">
                     <div class="award-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="award-name">全国大学生数学建模竞赛 · 国家级二等奖</div>
+                    <div class="award-name">全国大学生数学建模竞赛，国家级二等奖</div>
                     <div class="award-note"><i class="fas fa-arrow-trend-up"></i> 全国前 2.43%</div>
                     <div class="award-year">2025</div>
                 </div>
                 <div class="award-item">
                     <div class="award-icon"><i class="fas fa-globe"></i></div>
-                    <div class="award-name">美国大学生数学建模竞赛 (MCM/ICM) · Honorable Mention</div>
+                    <div class="award-name">美国大学生数学建模竞赛 (MCM/ICM)，Honorable Mention</div>
                     <div class="award-note"><i class="fas fa-medal"></i> 两次获奖</div>
                     <div class="award-year">2025, 2026</div>
                 </div>
@@ -390,60 +342,11 @@
             </div>
         </section>
 
-        <!-- Skills -->
-        <section class="section" id="skills">
-            <h2 class="section-title"><i class="fas fa-code"></i> 专业技能 / Skills</h2>
-            <div class="section-body">
-                <div class="skill-grid">
-                    <div class="skill-card skill-main">
-                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                        <div class="skill-content">
-                            <h4>工程能力</h4>
-                            <p>了解机器学习、深度学习核心算法；熟练使用主流深度学习框架 <strong>PyTorch</strong>；熟练掌握 <strong>C/C++</strong>、<strong>Python</strong> 等编程语言。</p>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-language"></i></div>
-                        <div class="skill-content">
-                            <h4>语言应用</h4>
-                            <p>具备基础英文文献阅读与学术写作能力，能流畅阅读顶会论文。</p>
-                            <div class="lang-badges">
-                                <span class="lang-badge">CET-4 637</span>
-                                <span class="lang-badge">CET-6 612</span>
-                                <span class="lang-badge">英语竞赛 国二</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Misc -->
-        <section class="section" id="misc">
-            <h2 class="section-title"><i class="fas fa-star"></i> 综合发展 / Miscellaneous</h2>
-            <div class="section-body misc-grid">
-                <div class="misc-card">
-                    <div class="misc-icon"><i class="fas fa-users"></i></div>
-                    <div class="misc-content">
-                        <h4>学生工作</h4>
-                        <p>担任校团委文化艺术中心副部长，负责校园新年联欢会等大型活动的舞台中控工作；参与校合唱团多项文艺演出活动。</p>
-                    </div>
-                </div>
-                <div class="misc-card">
-                    <div class="misc-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                    <div class="misc-content">
-                        <h4>志愿服务</h4>
-                        <p>积极参与校园迎新活动、书香校园活动等多项志愿活动，累计志愿时长达 <strong>150+</strong> 小时。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <footer class="footer">
-            <p><i class="fas fa-copyright"></i> 2026 Haohao Pan (潘好好). Last updated: September 2026.</p>
+            <p><i class="fas fa-copyright"></i> <span id="copyright-year">2026</span> Haohao Pan (潘好好). Last updated: <time id="last-updated" datetime="2026-11-16">November 16, 2026</time>.</p>
             <p class="visitor-stats" aria-label="网站浏览量" aria-live="polite">
                 <i class="far fa-eye" aria-hidden="true"></i>
-                总浏览量 <strong id="busuanzi_site_pv">统计中…</strong> 次
+                总浏览量 <strong id="busuanzi_site_pv">统计中…</strong><span id="visitor-unit">次</span>
             </p>
         </footer>
     </div>
@@ -487,6 +390,63 @@
 
         window.addEventListener('scroll', updateActiveNav, { passive: true });
         updateActiveNav();
+
+        // Keep footer metadata current.
+        const copyrightYear = document.getElementById('copyright-year');
+        const lastUpdated = document.getElementById('last-updated');
+        const modifiedAt = new Date(document.lastModified);
+
+        copyrightYear.textContent = String(new Date().getFullYear());
+        if (!Number.isNaN(modifiedAt.getTime())) {
+            lastUpdated.textContent = new Intl.DateTimeFormat('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            }).format(modifiedAt);
+            lastUpdated.dateTime = modifiedAt.toISOString().slice(0, 10);
+        }
+
+        // Busuanzi rejects file://, localhost and IP previews. Only request a
+        // real page-view count on a public hostname, and never leave the UI
+        // indefinitely in a loading state.
+        const pageViewCounter = document.getElementById('busuanzi_site_pv');
+        const visitorUnit = document.getElementById('visitor-unit');
+        const hostname = window.location.hostname;
+        const isLocalPreview = window.location.protocol === 'file:' ||
+            hostname === 'localhost' ||
+            hostname === '127.0.0.1' ||
+            hostname === '::1';
+
+        function showCounterStatus(message) {
+            pageViewCounter.textContent = message;
+            visitorUnit.hidden = true;
+        }
+
+        if (isLocalPreview) {
+            showCounterStatus('仅线上统计');
+        } else {
+            const counterObserver = new MutationObserver(() => {
+                const value = pageViewCounter.textContent.trim();
+                if (/^[0-9,.]+$/.test(value)) {
+                    visitorUnit.hidden = false;
+                    counterObserver.disconnect();
+                }
+            });
+            counterObserver.observe(pageViewCounter, { childList: true, characterData: true, subtree: true });
+
+            const counterScript = document.createElement('script');
+            counterScript.src = 'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js';
+            counterScript.async = true;
+            counterScript.onerror = () => showCounterStatus('暂不可用');
+            document.head.appendChild(counterScript);
+
+            window.setTimeout(() => {
+                if (!/^[0-9,.]+$/.test(pageViewCounter.textContent.trim())) {
+                    counterObserver.disconnect();
+                    showCounterStatus('暂不可用');
+                }
+            }, 8000);
+        }
     </script>
 
     <!-- Image Modal -->
